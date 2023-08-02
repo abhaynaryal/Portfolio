@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Nunito:wght@200;300;400;600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --yellow:#24f2f9;
+    --yellow:#24d2f9;
 }
 
 
@@ -19,7 +19,7 @@
 
 
 *::selection{
-    background: var(--yellow);
+    background: lightblue;
     color: #333;
 }
 
@@ -30,14 +30,6 @@ html{
 }
 
 
-html::-webkit-scrollbar-track{
-    background: #222;
-}
-
-
-html::-webkit-scrollbar-thumb{
-    background: var(--yellow);
-}
 
 
 body{
@@ -71,7 +63,7 @@ section {
 
 
 .btn:hover{
-    background: var(--yellow);
+    color: #24d2f9;
 }
 
 
@@ -157,10 +149,11 @@ header .navbar ul li a{
 
 header .navbar ul li a:hover{
     background: var(--yellow);
+    color: black;
 }
 
 
-header a:hover{
+header .navbar ul li a:hover{
     transform: scale(1.1);
 }
 
@@ -320,39 +313,9 @@ header a:hover{
     text-align: center;
     font-size: 2rem;
     color: white;
-    background: var(--yellow);
+    background: white;
 }
 
-
-.portfolio .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-}
-
-
-.portfolio .box-container .box{
-    height: 22rem;
-    width: 23rem;
-    border-radius: 1rem;
-    margin: 1rem;
-    overflow:hidden;
-    cursor: pointer;
-}
-
-
-.portfolio .box-container .box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-.portfolio .box-container .box:hover img{
-    transform: scale(1.1);
-}
 
 
 .contact .row{
